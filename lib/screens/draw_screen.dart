@@ -68,7 +68,7 @@ class _DrawScreenState extends State<DrawScreen> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.clear),
+        child: Icon(Icons.restore_page),
         onPressed: () {
           setState(() {
             _points.clear();
@@ -114,8 +114,8 @@ class _DrawScreenState extends State<DrawScreen> {
 
   Widget _mnistPreviewImage() {
     return Container(
-      width: 100,
-      height: 100,
+      width: 80,
+      height: 50,
       color: Colors.black,
       child: FutureBuilder(
         future: _previewImage(),
